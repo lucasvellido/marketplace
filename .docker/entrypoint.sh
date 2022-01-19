@@ -2,4 +2,4 @@
 
 npm install
 # npm run typeorm migration:run
-npm run start:dev
+rm -rf dist && npm run start:dev
