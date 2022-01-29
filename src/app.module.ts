@@ -1,12 +1,12 @@
-import { User } from './user/user.model';
-import { UserService } from './user/user.service';
+import { User } from './app/models/user/user.model';
+import { UserService } from './app/user/user.service';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { UserController } from './user/user.controller';
-import { UserModule } from './user/user.module';
+import { UserController } from './app/user/user.controller';
+import { UserModule } from './app/user/user.module';
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
